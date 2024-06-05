@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <title>Página de Login</title>
+</head>
+<body>
+    <div class="registration-card">
+        <div class="left-section">
+            <img src="./fotos/LogoDasa.png" alt="User Photo">
+        </div>
+        <div class="right-section">
+            <h2>Login</h2>
+            <h4>Faça login para acessar nosso portal</h4>
+            <form class="registration-form" action="/processa_login" method="post">
+                <label for="email">Seu E-mail
+                    <input type="text" name="email" placeholder="Email" required>
+                </label>
+
+                <label for="senha">Sua senha
+                    <input type="password" name="senha" placeholder="Senha" required>
+                </label>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

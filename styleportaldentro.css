@@ -1,0 +1,87 @@
+/* Reset de estilos e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background: #0077b6;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-size: 24px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+   /* Adicione estilos personalizados aqui ou use uma folha de estilos externa (styleportal.css) */
+   .grid-container {
+    width: 700px; /* Defina a largura máxima desejada */
+    margin: 0 auto; /* Isso centralizará o grid horizontalmente */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 100px;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+#titulo{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#titulonoticia{
+    margin: 0 auto; /* Isso centralizará o grid horizontalmente */  
+}
+
+.card {
+    border: 0px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Estilos para o rodapé */
+footer {
+    background: #0077b6;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999; /* Para garantir que fique acima do conteúdo */
+}

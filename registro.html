@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Formulário de Registro</title>
+</head>
+<body>
+    <h2>Registro de Usuário</h2>
+    <form action="/processa_registro" method="post">
+        <label for="nome">Nome de Usuário:</label>
+        <input type="text" name="nome" required><br>
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" required><br>
+        <input type="submit" value="Registrar">
+    </form>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <title>Página de Registro</title>
+
+</head>
+<body>
+    <div class="registration-card">
+        <div class="left-section">
+            <img src="./fotos/LogoDasa.png" alt="User Photo">
+        </div>
+        <div class="right-section">
+            <h2>Registro</h2>
+            <h4>Cadastre-se para acessar nosso portal!</h4>
+            <form class="registration-form" action="/processa_registro" method="post">
+                <label for="nome">Seu nome completo
+                <input type="text" name="nome" placeholder="Nome Completo" required></label>
+
+                <label for="email">Seu melhor E-mail
+                <input type="text" name="email" placeholder="Email" required></label>
+
+                <label for="password">Sua senha
+                <input type="password" name="senha" placeholder="Senha" required></label>
+
+                <label for="confirmpassword">Confirme sua senha
+                    <input type="password" name="confirmpassword" placeholder="Confirmar Senha" required>
+                </label>
+
+                <label for="telefone"> Telefone com DDD
+                <input type="text" name="phone" placeholder="Telefone" required></label>
+
+                <button type="submit" value="Registrar">Registrar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

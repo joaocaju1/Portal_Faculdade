@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+
+.registration-card {
+    display: flex;
+    max-width: 1000px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    width: 1000px;
+    height: 600px;
+}
+
+.left-section {
+    flex: 1;
+    background: #0077b6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-section img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+}
+
+.registration-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.registration-form input {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.registration-form button {
+    width: 98%;
+    padding: 10px;
+    background: #0077b6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.registration-form button:hover {
+    background: #005b8b;
+}
+
+ /* Adiciona regra de media query para telas menores (móveis) */
+ @media (max-width: 768px) {
+    .registration-card {
+        flex-direction: column; /* Empilha verticalmente os elementos no card */
+    }
+
+    .left-section {
+        order: 2; /* Muda a ordem da seção esquerda (foto) */
+    }
+
+    .right-section {
+        order: 1; /* Muda a ordem da seção direita (formulário) */
+    }
+}
